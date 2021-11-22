@@ -4,12 +4,24 @@
 // chiedo all'utente di inserire una parola
 const wordRequest = prompt('Dimmi una Parola');
 
+let userWordType = palindroma(wordRequest);
+console.log(userWordType);
 
-// la suddivido in lettere con il ciclo FOR
-for( let i = wordRequest.length; i = 0; i--){
 
-    console.log(wordRequest[i]);
-    // inverto le lettere 
-}
-   
 // creo la funzione 
+function palindroma(word){
+
+    // suddivido la parola in lettere con il ciclo FOR ed  inverto le lettere 
+    for( let i = wordRequest.length; i >= 0; i--){
+    let totalWordReverse = wordRequest[i];
+
+    let typeWord;
+
+    if(totalWordReverse === wordRequest){
+        typeWord = 'è una parola palindroma';
+    }else{
+        typeWord = 'non è una parola palindroma';
+    }
+}
+return typeWord;
+}
