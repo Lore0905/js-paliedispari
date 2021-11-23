@@ -28,15 +28,6 @@ let somma = userNumber + computerNumber;
 let sEvenOrOdd = theWinnerIs(somma);
 console.log(sEvenOrOdd);
 
-// valuto se l'user ha inserito pari o dispari e lo confronto con il numero e stabilisco chi ha vinto
-if( somma % 2 === 0 && userOddOrEven == 'pari' ){
-    alert = 'the winner is: USER';
-}
-else{
-    alert = 'the winner is: COMPUTER';
-}
-
-
 // CREIAMO LA FUNZIONE 
 
 // creiamo un numero random per il computer da uno a 5
@@ -57,5 +48,11 @@ function theWinnerIs(number){
 return choice;
 }
 
-
+// valuto se l'user ha inserito pari o dispari e lo confronto con il numero e stabilisco chi ha vinto
+if( (somma % 2 === 0) && userOddOrEven == 'pari' ){
+    alert('the winner is: USER');
+}
+else{
+    alert('the winner is: COMPUTER');
+}
 
