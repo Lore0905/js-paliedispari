@@ -39,7 +39,7 @@ function theWinnerIs(number){
     // dichiaro la variabile
     let choice;
     // stabiliamo se la somma dei due numeri è pari o dispari
-    if ( number % 2 === 0){
+    if ( number % 2 === 0 ){
         choice = 'pari';
     } 
     else{
